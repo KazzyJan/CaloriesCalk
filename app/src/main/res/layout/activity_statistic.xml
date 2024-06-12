@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistic">
+
+    <Spinner
+        android:id="@+id/spinnerTime"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/time"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calInDayTextViewS2"
+        tools:ignore="MissingConstraints" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/menu_layout"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/head5"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="#009D91"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center"
+        android:text="Статистика"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarS"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart" />
+
+    <TextView
+        android:id="@+id/fatsInDayTextViewS"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Загрузка"
+        android:textAlignment="center"
+        android:textColor="#5DCEC6"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toEndOf="@+id/fatsInDayTextViewS2"
+        app:layout_constraintTop_toBottomOf="@+id/head5" />
+
+    <TextView
+        android:id="@+id/fatsInDayTextViewS2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Жиры"
+        android:textAlignment="center"
+        android:textColor="#5DCEC6"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head5" />
+
+    <TextView
+        android:id="@+id/calInDayTextViewS2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Загрузка"
+        android:textAlignment="center"
+        android:textColor="#5DCEC6"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarS" />
+
+    <TextView
+        android:id="@+id/daylyCalTextViewS"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Загрузка"
+        android:textAlignment="center"
+        android:textColor="#009D92"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarS" />
+
+    <TextView
+        android:id="@+id/chInDayTextViewS"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Загрузка"
+        android:textAlignment="center"
+        android:textColor="#FFB073"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toEndOf="@+id/chInDayTextViewS2"
+        app:layout_constraintTop_toBottomOf="@+id/fatsInDayTextViewS" />
+
+    <TextView
+        android:id="@+id/chInDayTextViewS2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Углеводы"
+        android:textAlignment="center"
+        android:textColor="#FFB073"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatsInDayTextViewS2" />
+
+    <TextView
+        android:id="@+id/chInDayTextViewS3"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Выберите период:"
+        android:textAlignment="center"
+        android:textColor="#00665F"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calInDayTextViewS2" />
+
+    <TextView
+        android:id="@+id/prInDayTextViewS"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Загрузка"
+        android:textAlignment="center"
+        android:textColor="#FF6F00"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toEndOf="@+id/prInDayTextViewS2"
+        app:layout_constraintTop_toBottomOf="@+id/chInDayTextViewS" />
+
+    <TextView
+        android:id="@+id/prInDayTextViewS2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Белки"
+        android:textAlignment="center"
+        android:textColor="#FF6F00"
+        android:textSize="16sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chInDayTextViewS2" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fatsInDayTextViewS"
+        app:layout_constraintTop_toBottomOf="@+id/head5" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chInDayTextViewS3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

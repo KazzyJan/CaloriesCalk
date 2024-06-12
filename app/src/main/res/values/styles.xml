@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerItemStyle">
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="TransparentSpinnerPopup" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@android:color/transparent</item>
+    </style>
+</resources>

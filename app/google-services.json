@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "944333647022",
+    "firebase_url": "https://caloriescalculator-28357-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "caloriescalculator-28357",
+    "storage_bucket": "caloriescalculator-28357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944333647022:android:f9b673e74621f77232d13f",
+        "android_client_info": {
+          "package_name": "com.example.caloriescalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944333647022-9nubbk8gjvn63598t92vlqrgmga7u5r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caloriescalc",
+            "certificate_hash": "30becfe97b3fa8d52209b76dae2a4d95c05dae69"
+          }
+        },
+        {
+          "client_id": "944333647022-d63o7nopih8butko1dkd9cqrubh1glb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caloriescalc",
+            "certificate_hash": "07c7b52be1da28ba424f805152ded4bfad87a3f2"
+          }
+        },
+        {
+          "client_id": "944333647022-pqb4m4383di1gunvmt5lt5s0t0jmhkvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGa4KM_N2-b6Fw6xNF4SeabvmAsaFRxR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944333647022-jtg5shls6ss55mbf88j9ctbkln0llpjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944333647022:android:f5b088fe448fedb632d13f",
+        "android_client_info": {
+          "package_name": "com.example.caloriescalckotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944333647022-egfha8jflsqjb3hrjhk89c98j5kvkdq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caloriescalckotlin",
+            "certificate_hash": "30becfe97b3fa8d52209b76dae2a4d95c05dae69"
+          }
+        },
+        {
+          "client_id": "944333647022-pqb4m4383di1gunvmt5lt5s0t0jmhkvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGa4KM_N2-b6Fw6xNF4SeabvmAsaFRxR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944333647022-jtg5shls6ss55mbf88j9ctbkln0llpjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
