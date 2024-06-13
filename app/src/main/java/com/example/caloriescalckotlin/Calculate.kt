@@ -90,10 +90,8 @@ class Calculate : AppCompatActivity() {
                         val stat = thisUser.getStatThisDay(date)
                         caloriesInThisDay = stat?.calories?.toFloat() ?: 0f
                         val calories = thisUser.getStatThisDay(date)?.calories.toString()
-                        Toast.makeText(this@Calculate, calories, Toast.LENGTH_LONG).show()
 
                     } else {
-                        Toast.makeText(this@Calculate, "Запись не найдена", Toast.LENGTH_LONG).show()
                     }
 
                     calInDayTextView?.text = String.format("%.0f", caloriesInThisDay)

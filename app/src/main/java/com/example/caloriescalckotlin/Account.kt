@@ -160,6 +160,7 @@ class Account : AppCompatActivity() {
         val activity = findViewById<Spinner>(R.id.spinnerActivity)
         val check = addBiometricToBase(age, weight, height, gender, target, activity)
         if (check) {
+            Toast.makeText(this, "Данные сохранены", Toast.LENGTH_LONG).show()
             enterBoimetric!!.visibility = View.VISIBLE
             enterBiometricLayout!!.visibility = View.INVISIBLE
             biometricLayout!!.visibility = View.VISIBLE
